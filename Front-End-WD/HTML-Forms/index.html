@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label>Grass</label>
+        <input 
+            type ="radio" 
+            id ="pokemon type" 
+            name ="grass type" 
+            value ="grass"
+            onclick ="showImage('bulbasaur')"
+        />
+        <label>Water</label>
+        <input 
+            type ="radio" 
+            id ="pokemon type" 
+            name ="water type" 
+            value ="water"
+            onclick="showImage('squirtle')"
+        />
+        <label>Fire</label>
+        <input 
+            type ="radio" 
+            id ="pokemon type" 
+            name ="fire type" 
+            value ="fire"
+            onclick="showImage('charmander')"
+        />
+    </form>  
+    <div id ="bulbasaur" class="image-container">
+        <img src="" alt="">
+    </div>
+    <div id ="squirtle" class="image-container">
+        <img src="" alt="">
+    </div>
+    <div id ="charmander" class="image-container">
+        <img src="" alt="">
+    </div> 
+
+    <script>
+        function showImage(imageId) {
+            document.querySelectorAll('.image-container').forEach(img => {
+                img.style.display = 'none'
+            })
+        }
+    </script>
+</body>
+</html>
