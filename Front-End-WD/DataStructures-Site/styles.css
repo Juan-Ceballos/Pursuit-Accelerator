@@ -1,0 +1,10 @@
+section {
+    padding: auto;
+    background-color: blue;
+}
+.array {
+    background-color: aquamarine;
+    text-align: center;
+    border: 2px solid black;
+    padding: auto;
+}
