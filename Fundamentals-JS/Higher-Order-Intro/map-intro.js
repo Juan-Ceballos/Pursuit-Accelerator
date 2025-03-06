@@ -33,3 +33,41 @@ let arr4 = [1, 2, 3, 4, 5]
 //let arr4Squared = arr4.map (element => {return element * element})
 let arr4Squared = arr4.map (element => element * element)
 console.log(`arr4 squared with map ${arr4Squared}`)
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
+
+const pangram = [
+  "The",
+  "quick",
+  "brown",
+  "fox",
+  "jumps",
+  "over",
+  "the",
+  "lazy",
+  "dog",
+];
+
+let resultEvery = nums.every (a => a >= 1)
+let resultEveryPan = pangram.every (a => a.length < 6)
+console.log(resultEvery)
+console.log(resultEveryPan)
+
+let resultFind = nums.find (a => a === 0)
+console.log(resultFind)
+
+let resultFindIndex = nums.findIndex (a => a === 2)
+console.log(resultFindIndex)
+
+/*
+The key thing to understand is that forEach always returns undefined. 
+It's designed for performing side effects (like console logging) 
+and doesn't collect or return any values. 
+If you want to transform an array and get a new array back, you should use map instead.
+*/
+let resultForEach = nums.forEach ((a) => console.log(a * 2))
+console.log(resultForEach)
+
+let resultSome = nums.some (a => a < 3)
+console.log(resultSome)
+
