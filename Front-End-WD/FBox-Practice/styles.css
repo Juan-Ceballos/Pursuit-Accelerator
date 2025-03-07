@@ -12,17 +12,5 @@
 }
 
 .T8, .SF6, .GBVR{
-    background-color: red;
-    height: 100%;
-    width: 30%;
-    color: red;
-    margin: 0;
-}
-
-.SF6 {
-    background-color: yellow;
-}
-
-.GBVR {
-    background-color: blue;
+    display: flex;
 }
